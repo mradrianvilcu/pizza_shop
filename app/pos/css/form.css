@@ -1,0 +1,16 @@
+.fila{
+    width:100%;
+    padding:0.5rem;
+}
+
+label{
+    width:100%;
+}
+
+input{
+    width:100%;
+}
+
+button{
+    padding:0.2rem;
+}

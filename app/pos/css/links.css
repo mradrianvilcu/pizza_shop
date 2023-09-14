@@ -1,0 +1,55 @@
+*,html{
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:white;
+    font-size:16px;
+    
+}
+#abridormenu{
+    background-color: rgb(204, 204, 204);
+}
+#enlaces{
+    position:sticky;
+    top:0;
+    background-color: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+    list-style-type: none; 
+    font-size:0.8rem;
+    height:auto;
+    width:100%;
+    padding:0.5rem;
+}
+
+#enlaces > li {
+    border-color: white;
+    border-style:solid;
+    border-width:1px;
+    margin:0.5rem;
+    padding:0.5rem;
+}
+
+#enlaces > li > a{
+    text-decoration: none;
+    color:white;
+    
+}
+#enlaces > li > a:hover{
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 500px){
+
+    #enlaces{
+       display:none;
+    }
+
+}

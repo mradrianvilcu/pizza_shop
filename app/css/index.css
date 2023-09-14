@@ -1,0 +1,109 @@
+#btnTakeOrder{
+    background-color:rgb(0, 153, 255);
+    color:white;
+     position:fixed; 
+     right:5%; bottom:10%;
+      font-size:1.5rem;
+       border-style:solid;
+       border-width:1px;
+       border-color:white;
+       padding:1rem;
+       text-decoration: none;
+       border-radius: 5px;
+}
+
+#btnExitViewOrder{
+    color:black;
+    font-size:3rem;
+    text-decoration: none;
+    position:fixed; 
+     right:30%; top:10%;
+}
+
+#divPadre{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+}
+
+#enlacemodificar{
+    text-decoration:none; 
+    color:black; 
+    border-color:black; 
+    border-style:solid; padding:0.5rem; 
+    margin:1rem; 
+    border-width:1px;
+     background-color:white;
+     display: block;
+     border-radius:5px;
+}
+
+#enlacemodificar:hover{
+    background-color:aquamarine;
+}
+
+.divHijoNoEnviado{
+    background-color:rgba(255, 0, 0, 0.486);
+    border-radius: 5px;
+    margin:1rem;
+    padding:0.5rem;
+
+}
+
+.divHijoEnviado{
+    background-color:rgba(0, 255, 55, 0.486);
+    border-radius: 5px;
+    margin:1rem;
+    padding:0.5rem;
+
+}
+.view_order{
+    height:2rem;
+    width:auto;
+}
+
+ .kitchen, .invoice{
+    color:white;
+    background-color:black;
+    margin:1rem;
+    padding:0.5rem;
+    text-align: center;
+    cursor:pointer;
+}
+
+
+.kitchen2{
+    color:white;
+    background-color:red;
+    margin:1rem;
+    padding:0.5rem;
+    text-align: center;
+    cursor:pointer;
+}
+.kitchenX{
+    color:red;
+    border-style: solid;
+    border-width:1px;
+    border-color:red;
+    margin:1rem;
+    padding:0.5rem;
+    text-align: center;
+}
+
+.kitchenY{
+    color:black;
+    border-style: solid;
+    border-width:1px;
+    border-color:black;
+    margin:1rem;
+    padding:0.5rem;
+    text-align: center;
+}
+
+.view_order > a, .invoice > a{
+    display:block;
+    text-decoration:none;
+    background-color: black;
+    padding:0.5rem;
+    color:white;
+}
