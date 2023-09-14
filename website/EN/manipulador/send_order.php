@@ -221,23 +221,21 @@ require '../phpmailer/SMTP.php';
             //Server settings
             $mail->SMTPDebug = 0;                      //Enable verbose debug output
             $mail->isSMTP();                                            //Send using SMTP
-            $mail->Host       = 'mail.pizzamaria.uk';                     //Set the SMTP server to send through
+            $mail->Host       = '____complete_______';                     //Set the SMTP server to send through
             $mail->SMTPAuth   = true;                                   //Enable SMTP authentication
-            $mail->Username   = 'no-reply@pizzamaria.uk';                     //SMTP username
-            $mail->Password   = 'j5-ic4Mth7f$';                               //SMTP password
+            $mail->Username   = '_______complete________';                     //SMTP username
+            $mail->Password   = '______complete';                               //SMTP password
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;            //Enable implicit TLS encryption
             $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
         
             //Recipients
-            $mail->setFrom('no-reply@pizzamaria.uk', 'Pizza Maria');
-            $mail->addAddress($email);     //Add a receipt
-            $mail->addBCC('mariuseduardp82@gmail.com');
-            $mail->addBCC('mradrianvilcu@gmail.com');
+            $mail->setFrom('________email__________', '______');
+            $mail->addAddress('________email__________');     //Add a receipt
+            $mail->addBCC('______email_________');
         
             //Content
             $mail->isHTML(true);                                  //Set email format to HTML
             $mail->Subject = 'Order #' . $order_id;
-               
 
 // ---------------------------------- INICIO  MENSAJE EMAIL ------------
       
