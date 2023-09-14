@@ -1,0 +1,55 @@
+#ofertacasei{
+    width:432px;
+    height:296px;
+    background-image:url("../../img/ofertacasei.png");
+    background-size: contain;
+}
+
+#oferta1 , #oferta2, #oferta3, #oferta4{
+    width:100%;
+    height:25%;
+    font-size:2rem;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+#oferta1 > p, #oferta2 > p, #oferta3 > p, #oferta4 > p{
+    background-color: white;
+    border-radius: 50%;
+    padding: 0.2rem;
+    user-select: none;
+}
+
+#twoandhalf{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#ofertapizza{
+    width:80%;
+    height: auto;
+}
+
+#ofertapizza > img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 500px){
+    #ofertacasei{
+        width:300px;
+        height:205px;
+    }
+
+    #oferta1 , #oferta2, #oferta3, #oferta4{
+        font-size:1.5rem;
+    }
+
+    #ofertapizza{
+        width:95%;
+       
+    }
+}

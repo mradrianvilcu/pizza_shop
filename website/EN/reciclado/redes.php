@@ -1,0 +1,2 @@
+<a style="margin:0.5rem;" href="https://www.facebook.com/pizzamaria.uk/"><img src="../img/icons/fb.gif" alt="icono facebook" /></a>
+<a style="margin:0.5rem;" href="https://www.instagram.com/pizzamariauk/"><img src="../img/icons/ig.gif" alt="icono instagram" /></a>

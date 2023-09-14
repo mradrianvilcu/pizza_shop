@@ -1,0 +1,153 @@
+.sidebar{
+    background-color:white;
+    width: 100%;
+    height: auto;
+    margin-bottom:1rem;
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+}
+
+.dentroSidebar{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+   
+}
+
+
+.redes{
+    background-color: #fafafa;
+    margin:0.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+}
+
+
+.redes > a > img{
+    height:24px;
+    object-fit: contain;
+}
+
+#language{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#language > a{
+    text-decoration: none;
+    color:#d40000;
+    margin:0.5rem;
+}
+
+
+
+.categorias{
+    width:100%;
+    height:3rem;
+    background-color: #d40000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menu_categorias{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    height:100%;
+}
+
+#menu_categorias li {
+    list-style: none;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    background-color: #d40000;
+}
+
+#menu_categorias li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:#fafafa;
+    height:100%;
+    cursor:pointer;
+    padding:1rem;
+}
+
+#menu_categorias > li > ul{
+    width:100%;
+}
+
+
+#menu_categorias > li > ul > li > a {
+    width:100%;
+    height:100%;
+}
+
+#menu_categorias > li a:hover{
+    background-color: #fafafa;
+    color:#d40000;
+}
+
+#menu_categorias > li:hover > ul{
+    display: flex;
+}
+
+#menu_categorias > li{
+    position: relative;
+}
+
+#menu_categorias > li > ul{
+    display: none;
+    flex-direction: column;
+    position:absolute;
+    top:100%;
+    left:0%;
+}
+
+
+.botonCategorias{
+    display:none;
+}
+
+@media only screen and (max-width: 950px){
+    .redes{
+
+        width:50px;
+        height:100px;
+        display:flex;
+        flex-direction:column;
+    }
+
+    .redes > a > img{
+        height:36px;
+        width:36px;
+    }
+
+}
+
+@media only screen and (max-width: 500px){
+
+     .categorias {
+        display:none;
+       }
+
+    .botonCategorias{
+        display:block;
+        width:100%;
+        height:64px;
+        background:#d40000;
+       
+    }
+
+}

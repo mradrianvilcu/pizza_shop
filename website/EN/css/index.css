@@ -1,0 +1,24 @@
+#twoandhalf{
+    width:100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+#ofertapizza{
+    width:1000px;
+    height:393px;
+}
+
+#ofertapizza > img{
+    width:100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 500px){
+
+    #ofertapizza{
+        width:calc(1000px/2);
+        height:calc(393px/2);
+    }
+}

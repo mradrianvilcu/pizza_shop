@@ -1,0 +1,399 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-size:16px;
+    font-family: Arial, sans-serif;
+    background-color:#fafafa;
+}
+
+#cortina{
+   position:fixed;
+   z-index:2;
+   width:100%;
+   height:100%;
+   background-color:rgba(0,0,0,0.9);
+   overflow-y:auto;
+   display:none;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+
+
+#cortina > p{
+    position: absolute;
+    color:white;
+    cursor:pointer;
+    right:5%;
+    top:5%;
+    font-size:2rem;
+}
+
+#cortina > ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    width:70%;
+    font-size:1.2rem;
+    list-style: none;
+ 
+}
+
+#cortina > ul > li{
+    width:100%;
+    margin:0.1rem;
+}
+
+
+#cortina > ul > li > a{
+    text-decoration: none;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.2rem;
+    width:100%;
+    
+}
+
+#cortina > ul > li > a:hover{
+   color:black;
+   background-color:white;
+  
+}
+
+
+.cortinaMenu{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height:100%;
+    z-index: 10;
+    position:fixed;
+    top:0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.514);
+}
+
+.cortinaMenu > div{
+    background-color: white;
+    border-radius: 1rem;
+    width:70%;
+    font-size:1.5rem;
+}
+
+.cortinaMenu > div > div > select{
+    font-size:1.5rem;
+}
+
+.cortinaMenu > div > div {
+    margin:1rem;
+}
+
+
+
+.closeCM{
+    font-size:3rem;
+    position:absolute;
+    color:white;
+    right:10%;
+    top:5%;
+    cursor: pointer;
+}
+
+.btnMenu , .btnComprar{
+    margin:1rem; display:flex; 
+    justify-content:center;
+    align-items:center; 
+    height:3rem; 
+    background-color:#d40000; 
+    color:white; 
+    cursor:pointer; 
+    font-weight: bold;
+}
+
+.contenedorBuy{
+    display: flex;
+    justify-content: center;
+}
+
+.contenedorBuy > div {
+    background-color: #d40000;
+    color:white;
+    padding:1rem;
+    cursor:pointer;
+}
+
+
+
+.detalles{
+    background-color:#fafafa;
+    height:auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: space-evenly;
+    padding:2rem;
+    width:100%;
+}
+
+
+
+.detalles > .noIndexDetalles {
+   text-align:center;
+   width:30%;
+   padding:1rem;
+   min-width:200px;
+   display:flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+}
+
+.espacioCompra{
+    height:2rem;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between
+}
+
+
+#palabraPortada{
+    text-align:center;
+    width:100%;
+}
+
+
+.botonVenta:visited{
+    border:none;
+}
+
+
+.detalles > .indexDetalles{
+    text-align:center;
+    width:51%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    padding:2rem;
+}
+
+
+
+.detalles > .indexDetalles > p{
+    width: 80%;
+}
+
+.detalles > div > img {
+   width:100%;
+   max-width:600px;
+   object-fit: contain;
+}
+
+.detalles > div > p {
+   padding: 0.5rem 0 0 0.5rem;
+    }
+
+.detalles > p:nth-child(3){
+    font-size: 1.5rem;
+}
+
+.mapaTexto{
+   
+   width:100%;
+    text-align:center;
+}
+
+
+
+.mapaMap{
+    width:600px; 
+    height:450px;
+}
+
+#boxA{
+    width:100%;
+    position:fixed;
+    bottom:0;
+    text-align: center;
+    transition-property: all;
+    transition-duration: 0.5s;
+    display:none;
+    
+}
+
+#basketSquare{
+    text-decoration: none;
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    position:relative;
+    border-color:white;
+    border-width:1px;
+    border-style: solid;
+    width:70px;
+    height:70px;
+    background-color: #d40000;
+    position:fixed;
+    z-index:1; 
+    right:5%; 
+    bottom:5%;
+    border-radius:50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(141deg, rgba(212,0,0,1) 65%, rgba(255,255,255,1) 100%);
+}
+
+#fotoCart{
+   width:35px;
+   height: 35px;
+}
+
+#basketSquare > p{
+ padding:0.2rem;
+}
+
+
+#goTop{
+    background-color:#d40000;
+    width:15%;
+    margin:auto;
+    font-size:1.2rem;
+    color:white;
+    border-color: white;
+    border-width:1px;
+    border-style:solid;
+    text-decoration: none;
+    display:flex;
+    justify-content: center;
+}
+
+
+#goTop:hover{
+    background:white;
+    color:#d40000;
+    border-width:1px;
+    border-style:solid;
+}
+
+@media only screen and (max-width: 1350px){
+    .detalles > .noIndexDetalles {
+    
+        width:48%;
+        
+     }
+}
+
+@media only screen and (max-width: 950px){
+
+    #idSidebar{
+        position:relative;
+    }
+
+    .detalles{
+        left:0px;
+        width:100%;
+    }
+
+    .priva{
+        width:95%;
+    }
+
+
+    
+    .sidebar{
+        background-color: white;
+        border-style:none;
+        width:100%;
+        height:auto;
+       
+    }
+
+
+    .dentroSidebar{
+        width:100%;
+        height:auto;
+        padding:0;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;   /* quitar para ver */
+        justify-content: space-between;  /* NO ME FUNCIONA EL SPACE- BETWEEN*/
+    }
+
+  
+    
+    
+ 
+
+
+    .detalles > .indexDetalles{
+        text-align:center;
+        width:100%;
+        padding:1rem;
+    }
+
+
+    .detalles > .noIndexDetalles {
+        width:70%;
+     }
+    
+    
+   
+}
+
+@media only screen and (max-width: 500px){
+
+    .cortinaMenu > div{
+        background-color: white;
+        border-radius: 1rem;
+        width:90%;
+        font-size:1.5rem;
+    }
+
+ .cortinaMenu > div{
+       
+        font-size:1rem;
+}
+    
+ .cortinaMenu > div > div > select{
+        font-size:1rem;
+}
+ .detalles > .noIndexDetalles {
+        width:90%;
+     }
+
+     .portada{
+        height:15%;
+ }
+
+ .mapaMap{
+    width:315px;
+    height:236px;
+}
+
+   
+
+   #boton3L{
+       width:64px;
+       height:auto;
+       padding:0.5rem;
+       box-shadow:0 0 0.3rem rgba(0,0,0,0.6);
+   }
+   #boton3L:hover{
+    box-shadow:0 0 0.3rem rgba(0,0,0);
+    cursor:pointer;
+   }
+
+
+
+
+}
