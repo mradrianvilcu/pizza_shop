@@ -7,3 +7,5 @@ In order to make it work you have to configure some things: <br/><br/><br/>
 3. When a customer makes an online order, they receive a confirmation so you have to set up the details for PHPMAILER into
    "RO/manipulador/send_order.php" and "EN/manipulador/send_order.php". <br/><br/><br/>
    <b>CONFIGURATION FOR APP:</b>
+1. On "app/reciclado/conectar_base_datos.php" use your localhost database and on "app/reciclado/conectar_base_datos_online.php" use your online database.
+2. On "app/kitchen.php" on line 166 you have the printers you want to send the kitchen's ticket. I am using 3 thermal printers, you can use your default printer if you want.
