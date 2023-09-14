@@ -6,4 +6,4 @@ In order to make it work you have to configure some things: <br/>
 2. On "website/reciclado/connect_database.php" configure the online one.
 3. When a customer makes an online order, they receive a confirmation so you have to set up the details for PHPMAILER into
    "RO/manipulador/send_order.php" and "EN/manipulador/send_order.php". 
- 
+<b>CONFIGURATION FOR APP:</b>
