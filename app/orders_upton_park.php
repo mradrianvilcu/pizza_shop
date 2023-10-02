@@ -283,6 +283,20 @@
              <!-- BOTONES -->
               
               <div class="invoice" id=<?php echo "btnInvoice" . $rowOrders['id']; ?>>INVOICE</div>
+              <div><select>
+                <option> Select Driver </option>
+                <option value="viki" class="drivers" <?php if($rowOrders['driver'] == "viki"){ echo "selected"; } ?>> Viki </option>
+                <option value="raja" <?php if($rowOrders['driver'] == "raja"){ echo "selected"; } ?>> Raja </option>
+                <option value="nasir" <?php if($rowOrders['driver'] == "nasir"){ echo "selected"; } ?>> Nasir </option>
+                <option value="mun"<?php if($rowOrders['driver'] == "mun"){ echo "selected"; } ?>> Mun </option>
+              </select>
+              <select>
+                
+                           <option <?php if($rowOrders['paid'] == "notpaid"){ echo "selected";} ?>> Not Paid </option>
+                           <option <?php if($rowOrders['paid'] == "cash"){ echo "selected";} ?>> Cash </option>
+                           <option <?php if($rowOrders['paid'] == "card"){ echo "selected";} ?>> Card </option>
+                           <option <?php if($rowOrders['paid'] == "transfer"){ echo "selected";} ?>> Transfer </option>
+              </select></div>
               <?php
                     if($rowOrders['deleted'] == '0'){ ?>
                      <div class="kitchen" id=<?php echo "btnKitchen" . $rowOrders['id']; ?>>KITCHEN</div>
